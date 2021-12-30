@@ -54,7 +54,7 @@ private:
 };
 
 class SequencerSliders : public Component,
-    public AudioProcessorValueTreeState::Listener
+                         public AudioProcessorValueTreeState::Listener
 {
 public:
     SequencerSliders(SamplerAudioProcessor& p);

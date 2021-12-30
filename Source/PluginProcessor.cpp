@@ -309,7 +309,7 @@ void SamplerAudioProcessor::loadFile()
     mSampler.clearSounds();
     FileChooser fileChooser{ "Please select a file" };
 
-    if (fileChooser.browseForFileToOpen() )
+    if (fileChooser.browseForFileToOpen(nullptr) )
     {
         auto file = fileChooser.getResult();
         std::unique_ptr<AudioFormatReader> formatReader(mFormatManager.createReaderFor(file));
